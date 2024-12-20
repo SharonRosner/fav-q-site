@@ -19,7 +19,7 @@ async function getRandomListOfQuotes(number, tag) {
     const batchPromises = [];
     const requestsAbortControllers = [];
 
-    const shouldCancel = false;
+    let shouldCancel = false;
     const onAbortFunction = () => {
         shouldCancel = true;
     };
